@@ -15,7 +15,28 @@ namespace AlarmClock
         public Form1()
         {
             InitializeComponent();
+            CurrentTime.Text = DateTime.Now.ToLongTimeString();
         }
 
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        } // закрытие программы
+
+        private void TurnOff_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            CurrentTime.Text = DateTime.Now.ToLongTimeString(); // В label помещаем время которое на данный момент (берется из времени системы)
+            label1.Text = SelectedTime.Text;
+            if (SelectedTime.KeyPress == true)
+            {
+
+            }
+
+        }
     }
 }

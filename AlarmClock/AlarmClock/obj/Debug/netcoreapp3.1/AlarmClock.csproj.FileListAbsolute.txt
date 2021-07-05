@@ -1,0 +1,15 @@
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.exe
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.deps.json
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.runtimeconfig.json
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.runtimeconfig.dev.json
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.dll
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\bin\Debug\netcoreapp3.1\AlarmClock.pdb
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.csprojAssemblyReference.cache
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.Form1.resources
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.csproj.GenerateResource.cache
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.AssemblyInfoInputs.cache
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.AssemblyInfo.cs
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.csproj.CoreCompileInputs.cache
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.dll
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.pdb
+C:\Users\Meloy\source\repos\AlarmClock\AlarmClock\AlarmClock\obj\Debug\netcoreapp3.1\AlarmClock.genruntimeconfig.cache
