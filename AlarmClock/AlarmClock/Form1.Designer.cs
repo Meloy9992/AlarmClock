@@ -34,13 +34,17 @@ namespace AlarmClock
             this.Exit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CurrentTime = new System.Windows.Forms.Label();
-            this.SelectedTime = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.AddTime = new System.Windows.Forms.Button();
+            this.SelectTime = new System.Windows.Forms.TextBox();
+            this.EnterTime = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.AllTime = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // TurnOff
             // 
-            this.TurnOff.Location = new System.Drawing.Point(12, 200);
+            this.TurnOff.Location = new System.Drawing.Point(5, 197);
             this.TurnOff.Name = "TurnOff";
             this.TurnOff.Size = new System.Drawing.Size(109, 35);
             this.TurnOff.TabIndex = 0;
@@ -50,7 +54,7 @@ namespace AlarmClock
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(224, 200);
+            this.Exit.Location = new System.Drawing.Point(235, 197);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(109, 35);
             this.Exit.TabIndex = 0;
@@ -70,46 +74,87 @@ namespace AlarmClock
             this.CurrentTime.AutoSize = true;
             this.CurrentTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CurrentTime.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CurrentTime.Location = new System.Drawing.Point(109, 40);
+            this.CurrentTime.Location = new System.Drawing.Point(8, 9);
             this.CurrentTime.Name = "CurrentTime";
-            this.CurrentTime.Size = new System.Drawing.Size(181, 50);
+            this.CurrentTime.Size = new System.Drawing.Size(191, 50);
             this.CurrentTime.TabIndex = 1;
-            this.CurrentTime.Text = "CurrentText";
+            this.CurrentTime.Text = "CurrentTime";
             this.CurrentTime.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.CurrentTime.UseCompatibleTextRendering = true;
-            // 
-            // SelectedTime
-            // 
-            this.SelectedTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SelectedTime.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SelectedTime.FormatString = "T";
-            this.SelectedTime.FormattingEnabled = true;
-            this.SelectedTime.Location = new System.Drawing.Point(76, 90);
-            this.SelectedTime.Name = "SelectedTime";
-            this.SelectedTime.Size = new System.Drawing.Size(196, 28);
-            this.SelectedTime.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 144);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(147, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
+            // 
+            // AddTime
+            // 
+            this.AddTime.Location = new System.Drawing.Point(120, 197);
+            this.AddTime.Name = "AddTime";
+            this.AddTime.Size = new System.Drawing.Size(109, 35);
+            this.AddTime.TabIndex = 4;
+            this.AddTime.Text = "AddTime";
+            this.AddTime.UseVisualStyleBackColor = true;
+            this.AddTime.Click += new System.EventHandler(this.AddTime_Click);
+            // 
+            // SelectTime
+            // 
+            this.SelectTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SelectTime.Location = new System.Drawing.Point(5, 62);
+            this.SelectTime.Name = "SelectTime";
+            this.SelectTime.Size = new System.Drawing.Size(110, 23);
+            this.SelectTime.TabIndex = 5;
+            // 
+            // EnterTime
+            // 
+            this.EnterTime.AutoSize = true;
+            this.EnterTime.Location = new System.Drawing.Point(5, 88);
+            this.EnterTime.Name = "EnterTime";
+            this.EnterTime.Size = new System.Drawing.Size(110, 15);
+            this.EnterTime.TabIndex = 6;
+            this.EnterTime.Text = "Время будильника";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(122, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Выбранное время";
+            // 
+            // AllTime
+            // 
+            this.AllTime.AllowDrop = true;
+            this.AllTime.FormattingEnabled = true;
+            this.AllTime.HorizontalScrollbar = true;
+            this.AllTime.ItemHeight = 15;
+            this.AllTime.Location = new System.Drawing.Point(224, 12);
+            this.AllTime.Name = "AllTime";
+            this.AllTime.Size = new System.Drawing.Size(120, 94);
+            this.AllTime.Sorted = true;
+            this.AllTime.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 259);
+            this.ClientSize = new System.Drawing.Size(351, 259);
+            this.Controls.Add(this.AllTime);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.EnterTime);
+            this.Controls.Add(this.SelectTime);
+            this.Controls.Add(this.AddTime);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.SelectedTime);
             this.Controls.Add(this.CurrentTime);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.TurnOff);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -126,8 +171,12 @@ namespace AlarmClock
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label CurrentTime;
-        private System.Windows.Forms.ComboBox SelectedTime;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button AddTime;
+        private System.Windows.Forms.TextBox SelectTime;
+        private System.Windows.Forms.Label EnterTime;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox AllTime;
     }
 }
 
